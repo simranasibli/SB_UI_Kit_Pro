@@ -1,0 +1,257 @@
+.myNavbarBrand{
+    color: #0061f2 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 19.2px;
+}
+
+%allPagesHeader{
+    width: 80px;
+    color: #0061f2 !important;
+    padding: 3px;
+    font-size: 75%;
+    font-weight: 400;
+    text-align: center;
+    background-color: #dae7fb;
+    border-radius: 100px;
+}
+
+#nav{
+    ul{
+        li{
+            i{
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+#mainContent{
+    .col-lg-6{
+
+        h1{
+            color: #363d47;
+        }
+
+        p{
+            color: #69707a;
+        }
+
+        a{
+            border-radius: 10px;
+        }
+
+        .btnBgColor{
+            color: #0061f2 !important;
+            background-color: #dae7fb !important;
+            border-color: #dae7fb !important;
+
+            &:hover{
+                background-color: #b7d1f7 !important;
+                border-color: #acc9f6 !important;
+            }
+        }
+    }
+}
+
+#landingPages{
+    background-color: #f2f6fc !important;
+
+    .col-lg-12{
+
+        .demos{
+            @extend %allPagesHeader;
+        }
+
+        h2{
+            color: #363d47;
+        }
+
+        p{
+            max-width: 60%;
+            color: #69707a;
+        }
+    }
+    .col-lg-4{
+
+        h6{
+            color: #363d47;
+        }
+    }
+}
+
+#innerPages{
+
+    .col-lg-12{
+        .pages{
+            @extend %allPagesHeader;
+        }
+
+        h2{
+            color: #363d47;
+        }
+
+        p{
+            max-width: 60%;
+            color: #69707a;
+        }
+    }
+    .col-lg-4{
+
+        h6{
+            color: #363d47;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+#headerExamples{
+    background-color: #f2f6fc !important;
+
+    .col-lg-12{
+
+        .customizable{
+            @extend %allPagesHeader;
+            width: 90px;
+        }
+
+        h2{
+            color: #363d47;
+        }
+
+        p{
+            max-width: 60%;
+            color: #69707a;
+        }
+    }
+    .col-lg-4{
+
+        h6{
+            color: #363d47;
+        }
+    }
+}
+
+#documentation{
+
+    .col-lg-12{
+        h2{
+            color: #363d47;
+        }
+
+        p{
+            max-width: 60%;
+            color: #69707a;
+        }
+    }
+    .col-lg-4{
+
+        %headingNumbers{
+            color: #c5ccd6 !important;
+            font-weight: 500 !important;
+            font-size: 5.5rem;
+        }
+
+        .documentationLeftCol{
+            @extend %headingNumbers;
+        }
+        .documentationMiddleCol{
+            @extend %headingNumbers;
+        }
+        .documentationRightCol{
+            @extend %headingNumbers;
+        }
+
+        .h5{
+            color: #363d47;
+        }
+
+        p{
+            color: #69707a;
+        }
+    }
+}
+
+#footer{
+    
+    .col-lg-3{
+        
+        .footerBrand{
+            color: #a7aeb8;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .footerTitle{
+            color: #a7aeb8;
+            font-size: 0.875rem;
+        }
+        .social{
+            a{
+                i{
+                    color: #a7aeb8;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .col-lg-9{
+
+        .col-lg-3{
+
+            .menuHeading{
+                color: #a7aeb8;
+                border-bottom: 1px solid lightgray;
+            }
+
+            ul{
+                li{
+                    color: #a7aeb8;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#copyright{
+
+    .col-lg-6{
+        color: #a7aeb8;
+
+        a{
+            font-size: 0.875rem;
+            color: #a7aeb8;
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    .copyrightRightSide{
+        display: block;
+        float: right;
+    }
+}
+@media screen and(max-width: 991px){
+
+    .btnMediaQuery{
+        margin-top: 15px;
+    }
+    .footerMediaQuery{
+        text-align: center;
+    }
+    .menuHeadingMediaQuery{
+        margin-top: 30px;
+    }
+}
